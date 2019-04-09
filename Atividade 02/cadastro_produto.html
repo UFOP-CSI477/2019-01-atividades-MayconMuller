@@ -1,0 +1,81 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Atv 01 Produtos </title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin">
+
+</head>
+<body>
+
+<div id="navegacao">
+  <div id="area">
+    <h1 id="titulo">Sistemas<span class="laranja">Web</span></h1>
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="cadastro_produto.html">Produtos</a>
+      <a href="http://google.com/">sair</a>
+    </div>
+  </div>
+  </div>
+
+  <div id="conteudo_do_sistema">
+    <h2>Preencha as informações do Produto:</h2>
+
+    <form>
+  	  <label for="nome"><h4> Nome:</h4> </label>
+  		<input type="text" name="Nome" id="nome" placeholder="Nome do Produto" >
+
+  		<label for="peso"><h4> Peso:</h4></label>
+  		<input type="text" name="Peso" id="peso" placeholder="Peso do Produto">
+
+          <label > <h2> Unidade de Medida </h2> </label>
+
+  		<input type="radio" name="um" id="KG">
+  		<label for="KG">KG</label>
+
+  		<input type="radio" name="um" id="l">
+  		<label for="l">Litros</label>
+
+  		<label > <h2> Estoque: </h2> </label>
+  		<input type="text" name="Estoque" id="estoque" placeholder="Estoque do Produto">
+
+  		<label for="mercado" > <h2> Tipo de Comercialização: </h2> </label>
+
+  		<input type="checkbox" id="interno" name="mercado[0]">
+  		<label for="interno">Mercado Interno</label>
+
+  		<input type="checkbox" id="externo" name="mercado[1]">
+  		<label for="externo">Mercado Externo</label>
+
+  		<label for="fornecedor"><h2>Selecione o Fornecedor:</h2></label>
+  		<select name="fornecedor">
+  			<option></option>
+  			<option>Coca-Cola</option>
+  			<option>Tropeira Alimentos</option>
+  			<option>BRF</option>
+  			<option>FL.Cocais</option>
+  			<option>Bio Extratos</option>
+  			<option>RG Pneus</option>
+  			<option>Auto Peças Rondoming</option>
+  		</select>
+
+  		<label> <h2>Valores</h2></label>
+
+  		<label for="valorC">Valor de Compra</label>
+  		<input type="text" name="valorC" placeholder="*informe o valor">
+
+  		<label for="valorV">Valor de Venda</label>
+  		<input type="text" name="valorV" placeholder="*informe o valor"><br><br>
+
+
+  		<input id="botao" type="submit"  value="Cadastrar"  name="cadastro">
+
+  		<input id="botao" type="reset" value="Limpar">
+
+  	</form>
+
+  </div>
+</body>
+</html>

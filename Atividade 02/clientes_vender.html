@@ -1,0 +1,99 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Vendas...</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin">
+
+</head>
+<body>
+
+<div id="navegacao">
+  <div id="area">
+    <h1 id="titulo">Sistemas<span class="laranja">Web</span></h1>
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a href="clientes.html">Clientes</a>
+      <a href="cadastro_produto.html">Produtos</a>
+      <a href="http://google.com/">sair</a>
+    </div>
+  </div>
+  </div>
+
+  <div id="conteudo_do_sistema">
+    <h2>Área de vendas</h2>
+
+    <form>
+      <div id="divEsq">
+      <label for="Cliente"><h2>Selecione o Cliente:</h2></label>
+      <select name="Cliente">
+        <option></option>
+        <option>1 | Ana Claudia Beatriz</option>
+        <option>2 | Maycon Muller</option>
+        <option>3 | José Pedro Figueredo</option>
+        <option>4 | Anisia da Silva Bicalho</option>
+        <option>5 | João Silva</option>
+        <option>6 | Júnior Cigano</option>
+        <option>7 | José Aldo Júnior</option>
+      </select>
+        </div>
+
+        <div id="divDir">
+      <label for="Produto"><h2>Selecione o Produto:</h2></label>
+      <select name="Produto">
+        <option></option>
+        <option>1 | Gabinete morderFire</option>
+        <option>2 | Estabilizador LG</option>
+        <option>3 | Impressora HP</option>
+        <option>4 | Monitor AOC</option>
+        <option>5 | Ventilador FAET</option>
+        <option>6 | Whey Protein</option>
+        <option>7 | Creatina</option>
+      </select>
+<br>
+      <label for="qnt"><h2>Informe a quantidade de produtos</h2></label>
+  		<input type="number" name="qnt" id="qnt" placeholder="Número de Unidades">
+  </div>
+
+
+
+          <label > <h2>Selecione a transportadora:</h2> </label>
+
+  		<input type="radio" name="um" id="PAC">
+  		<label for="KG">PAC</label>
+
+  		<input type="radio" name="um" id="Correios">
+  		<label for="l">Correios</label>
+
+      <input type="radio" name="um" id="totalE">
+  		<label for="TotalE">Total Expres</label>
+
+
+
+      <label for="cep"><h2>Informe o CEP</h2></label>
+      <input type="number" name="cep" placeholder="Ex: 35935-000">
+
+      <label > <h2>Forma de Pagamento:</h2> </label>
+
+    <input type="radio" name="um" id="dinheiro">
+    <label for="dinheiro">Dinheiro</label>
+
+    <input type="radio" name="um" id="Cartao">
+    <label for="Cartao">Cartão</label>
+
+    <input type="radio" name="um" id="dep">
+    <label for="dep">Depósito</label>
+
+
+  <br><br>
+
+
+  		<input id="botao" type="submit"  value="Confirmar"  name="Confirmar">
+
+  		<input id="botao" type="reset" value="Limpar">
+
+  	</form>
+
+  </div>
+</body>
+</html>

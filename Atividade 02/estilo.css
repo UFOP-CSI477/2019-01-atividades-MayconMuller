@@ -1,0 +1,139 @@
+body{
+  font-family: 'Aladin'  ;
+  background-color: #f3f3f3;
+  font-size: 16px;
+
+}
+
+/* Id para barra de navegação com um fundo branco */
+
+#navegacao{
+  background: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  height: 45px;
+  border-radius: 15px;
+}
+
+#area{
+  margin: 0 auto; /*para centralizar o cabeçalho  margin de  0 no topo e zero nas laterais*/
+  /*width: auto;*/
+  width: 800px;
+}
+#titulo{
+  float: left;
+  margin: 10px;
+}
+
+#menu{  /*alinha o menu na parte direita da div*/
+  float: right;
+  margin: 10px;
+}
+
+/* vendas*/
+#divEsq{
+  float: left;
+  width: 410px;
+  margin: 10px;
+}
+
+#divDir{  /*alinha o menu na parte direita da div*/
+  float: right;
+  width: 410px;
+  margin: 10px;
+}
+
+select{
+  background: #FAAC58;
+  color: white;
+  border-radius: 15px;
+  border: #FF4000;
+  font-family: 'Aladin' ;
+  font-size: 12pt;
+}
+
+
+#conteudo_do_sistema{
+  margin: 10px auto 10px auto;; /*seguindo o mesmo tamanho do menu (alinhado)*/
+  width: 875px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 15px;
+  height: auto;  /* altura da minha div*/
+}
+
+
+/*formatação dos links do menu*/
+a{
+  text-decoration: none; /*removendo o underline*/
+  padding: 5px 10px;
+}
+
+input{
+  width: auto;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border: 1px solid #FF4000;
+  border-radius: 15px;
+}
+
+#botao{
+   background: #FF4000;
+   color: #fff;
+   font-family: 'Aladin' ;
+   font-size: 18px;
+   border: white;
+
+}
+a{
+  border-radius: 15px;
+}
+
+#opcao{  /*simular um botão */
+  background: #FF4000;
+  color: white;
+}
+
+a:hover{
+  background: #FF4000;
+  color: #fff;
+}
+
+a:visited{
+  color: none;
+}
+
+a:link{
+  color: grey;
+}
+
+a:active{
+  color: #535353;
+}
+
+/*Tabelas */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+}
+tbody tr:hover {
+  background-color: #c6c6c6;
+}
+
+thead tr:hover {
+  background-color: #FF4000;
+  color: #fff;
+}
+
+tbody td:hover {
+  color: #FF4000;
+}
+
+/*formatação das classes usadas */
+
+.laranja{
+  color: #FF4000;
+}
