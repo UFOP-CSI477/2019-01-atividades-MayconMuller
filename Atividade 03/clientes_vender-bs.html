@@ -1,0 +1,127 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Vendas Bootstrap</title>
+  <link rel="stylesheet" href="./bootstrap/css/Bootstrap.css">
+  <link rel="stylesheet" href="estilo-bs.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin">
+
+</head>
+<body>
+
+<div class="container">
+
+<div  class="row" id="navegacao">
+<div class="col-6">  <h1>Sistemas<span class="laranja">Web</span></h1> </div>
+    <div class="col-6">
+      <a href="index-bs.html" class="btn btn-light">Home</a>
+      <a href="clinetes_listar-bs.html" class="btn btn-light">Clientes</a>
+      <a href="cadastro_produto-bs.html" class="btn btn-light">Produtos</a>
+      <a href="http://google.com/" class="btn btn-light">sair</a>
+    </div>
+  </div>
+
+
+  <div id="conteudo_do_sistema">
+
+
+    <h2>Área de vendas</h2>
+
+    <form>
+
+      <div class="row">
+        <div class="form-group col-6">
+          <label for="Cliente"><h2>Selecione o Cliente:</h2></label>
+          <select name="Cliente" class="custom-select">
+            <option value="0"></option>
+            <option value="1">1 | Ana Claudia Beatriz</option>
+            <option value="2">2 | Maycon Muller</option>
+            <option value="3">3 | José Pedro Figueredo</option>
+            <option value="4">4 | Anisia da Silva Bicalho</option>
+            <option value="5">5 | João Silva</option>
+            <option value="6">6 | Júnior Cigano</option>
+            <option value="7">7 | José Aldo Júnior</option>
+          </select>
+
+
+        <div class="form-group">
+
+         <label for="cep"><h2>Informe o CEP</h2></label>
+          <input type="number" name="cep" placeholder="Ex: 35935-000" class="form-control">
+        </div>
+
+        <div class="form-group">
+         <label for="qnt"><h2>Informe a quantidade de produtos</h2></label>
+          <input type="number" name="qnt" id="qnt" placeholder="Número de Unidades" class="form-control">
+        </div>
+
+          </div>
+
+
+
+
+
+            <div class="form-group col-6">
+              <label for="Produto"><h2>Selecione o Produto:</h2></label>
+              <select name="Produto" class="custom-select">
+                <option value="0"></option>
+                <option value="1">1 | Gabinete morderFire</option>
+                <option value="2">2 | Estabilizador LG</option>
+                <option value="3">3 | Impressora HP</option>
+                <option value="4">4 | Monitor AOC</option>
+                <option value="5">5 | Ventilador FAET</option>
+                <option value="6">6 | Whey Protein</option>
+                <option value="7">6 | Whey Protein</option>
+                <option >7 | Creatina</option>
+              </select>
+
+
+              <div class="form-group">
+
+              <div><label> <h2>Selecione a transportadora:</h2> </label></div>
+
+            <div> <input type="radio" name="um" id="PAC" class="form-check-input"></div>
+            <div>  <label for="KG" class="form-check-label">PAC</label></div>
+
+            <div>  <input type="radio" name="um" id="Correios" class="form-check-input"></div>
+            <div>  <label for="l" class="form-check-label">Correios</label></div>
+
+            <div>  <input type="radio" name="um" id="totalE" class="form-check-input"></div>
+            <div>  <label for="TotalE" class="form-check-label">Total Expres</label></div>
+              </div>
+
+
+                   <div class="form-group custom-control custom-switch"">
+
+                    <label > <h2>Forma de Pagamento:</h2> </label>
+
+                  <div><input type="radio" name="um" id="dinheiro" class="custom-control-input">
+                  <label for="dinheiro" class="custom-control-label">Dinheiro</label></div>
+
+                  <div><input type="radio" name="um" id="Cartao" class="custom-control-input">
+                  <label for="Cartao" class="custom-control-label">Cartão</label></div>
+
+                  <div><input type="radio" name="um" id="dep" class="custom-control-input">
+                  <label for="dep" class="custom-control-label">Depósito</label></div>
+                  </div>
+
+              </div>
+
+              </div>
+
+
+<div class="row">
+<div class="col-1">
+  <input id="botao" type="submit"  value="Confirmar"  name="Confirmar" class="btn btn-warning"></div>
+<div class="col-1">
+  <input id="botao" type="reset" value="Limpar" class="btn btn-warning"></div>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
