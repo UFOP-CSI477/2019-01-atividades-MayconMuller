@@ -1,0 +1,29 @@
+body{
+  font-family: 'Aladin'  ;
+  background-color: #f3f3f3;
+  font-size: 16px;
+
+}
+
+#navegacao{
+  background: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  height: 45px;
+  border-radius: 15px;
+}
+
+
+.laranja{ /*Neste caso a cor é amarela kkk  não  mudei o id */
+  color: #FFBF00;
+}
+
+
+
+
+#conteudo_do_sistema{
+  margin: 10px auto 10px auto;; /*seguindo o mesmo tamanho do menu (alinhado)*/
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+
+}

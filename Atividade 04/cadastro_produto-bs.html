@@ -1,0 +1,164 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Produtos Bootstrap</title>
+  <link rel="stylesheet" href="./bootstrap/css/Bootstrap.css">
+  <link rel="stylesheet" href="estilo-bs.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin">
+
+</head>
+<body>
+
+<div class="container">
+
+<div  class="row" id="navegacao">
+<div class="col-6">  <h1>Sistemas<span class="laranja">Web</span></h1> </div>
+    <div class="col-6">
+      <a href="index-bs.html" class="btn btn-light">Home</a>
+      <a href="clientes_listar-bs.html" class="btn btn-light">Clientes</a>
+      <a href="cadastro_produto-bs.html" class="btn btn-light">Produtos</a>
+      <a href="http://google.com/" class="btn btn-light">sair</a>
+    </div>
+  </div>
+
+
+
+
+  <div id="conteudo_do_sistema">
+
+  <h2>Preencha as informações do Produto:</h2>
+
+
+
+	<form name="dadosProduto">
+<div class="row">
+    <div class="form-group col-6">
+      <div>
+            <label for="nome" id="labelNomeProduto"><h4> Nome:</h4> </label>
+            <input type="text" name="nomeDoProduto" id="nome" placeholder="Nome do Produto" class="form-control" >
+
+        <div id="alertaNomeProduto" style="display: none;" class="alert alert-danger">
+          <span>Insira um nome para o produto<span>
+        </div>
+        
+
+      </div>
+
+     <div>
+
+            <label for="UM" id="labelUM"> <h4> Unidade de Medida </h4> </label>
+        <div class="form-group custom-control custom-switch">
+            <input type="radio" name="um" id="KG"class="custom-control-input">
+            <label for="KG"  class="custom-control-label">KG</label>
+        </div>
+
+          <div class="form-group custom-control custom-switch">
+              <input type="radio" name="um" id="l" class="custom-control-input">
+              <label for="l"  class="custom-control-label">Litros</label>
+          </div>
+     </div>
+
+           <div>
+                  <label for="fornecedor"><h2>Selecione o Fornecedor:</h2></label>
+              <div class="form-group">
+                  <select id="fornecedor" class="custom-select">
+                    <option value="0"></option>
+                    <option value="1">Coca-Cola</option>
+                    <option value="2">Tropeira Alimentos</option>
+                    <option value="3">BRF</option>
+                    <option value="4">FL.Cocais</option>
+                    <option value="5">Bio Extratos</option>
+                    <option value="6">RG Pneus</option>
+                    <option value="7">Auto Peças Rondoming</option>
+                  </select>
+               </div>
+
+               <div id="alertaFornecedor" style="display: none;" class="alert alert-danger">
+          <span>Selecione um fornecedor<span>
+             </div>
+
+
+            </div>
+
+
+        <div class="form-group">
+             <label> <h4>Valores</h4></label>
+
+             <div>
+                 <label for="valorC" id="labelValorCompra">Valor de Compra</label>
+                 <input type="number" id="valorC"  placeholder="*informe o valor" class="form-control">
+                 <div id="alertaValorCompra" style="display: none;" class="alert alert-danger">
+                           <span>Insira o valor de compra<span>
+                </div>
+             </div>
+
+             <div>
+                 <label for="valorV" id="labelValorVenda">Valor de Venda</label>
+                 <input type="number" name="valorV" id="valorV" placeholder="*informe o valor" class="form-control">
+                 <div id="alertaValorVenda" style="display: none;" class="alert alert-danger">
+                           <span>Insira o valor de venda<span>
+                </div>
+            </div>
+        </div>
+
+
+    </div><!-- Fim do lado esquerdo-->
+
+  <div class="form-group col-6">
+    <div>
+      <label for="peso" id="labelPeso"><h4> Peso:</h4></label>
+      <input type="number" name="Peso" id="peso" placeholder="Peso do Produto" class="form-control">
+      <div id="alertaPeso" style="display: none;" class="alert alert-danger">
+                           <span>Insira o Peso do produto<span>
+      </div>
+    </div>
+
+    <div>
+      <label  id="labelEstoque"> <h4> Estoque: </h4> </label>
+      <input type="number" name="Estoque" id="estoque" placeholder="Estoque do Produto" class="form-control">
+      <div id="alertaEstoque" style="display: none;" class="alert alert-danger">
+                           <span>Insira a quantidade em estoque<span>
+      </div>
+    </div>
+
+<div class="form-group form-check">
+    <label for="mercado" id="comercializacao" > <h4>Tipo de Comercialização: </h4> </label>
+
+    <div>  <input type="checkbox" id="interno" name="mercado[0]" class="form-check-input"></div>
+    <div>  <label for="interno" class="form-check-label">Mercado Interno</label></div>
+
+    <div>  <input type="checkbox" id="externo" name="mercado[1]" class="form-check-input"></div>
+    <div>  <label for="externo" class="form-check-label">Mercado Externo</label></div>
+</div>
+
+
+
+  </div>
+  </div>
+
+    <div class="row">
+
+
+              <div class="col-1">
+                <button type="button"  class="btn btn-primary" onclick="testeValidarForm()">Cadastrar </button>
+              </div>
+
+            <div class="col-1">
+              <input  class="btn btn-warning" type="reset" value="Limpar">
+            </div>
+    </div>
+</form>
+
+</div>
+  
+ <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+
+<script src="forms-validar.js"></script>
+
+</body>
+</html>
