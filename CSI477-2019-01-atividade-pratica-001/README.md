@@ -1,6 +1,6 @@
 # Sistemas Web I Atividade Prática 01
 
-##Sobre a atividade
+## 1.Sobre a atividade
 * A atividade prática tem por objetivo a realização de 3(três) tarefas relacionadas ao conteúdo abordado nas aulas de sistemas web I e as mesmas serão analisadas e avaliadas como críterio para avaliação parcial do semestre letivo 2019/01 para o curso de sistemas de informação da Universidade Federal de Ouro Preto (UFOP).
 
 
@@ -10,7 +10,7 @@
 
 
 
-### 5. Referências
+### 2. Referências
 * Todas imagens utilizadas na realização da atividade foram utilzadas apenas para fins acadêmicos, com o objetivo apenas de melhorar a interface das atividades e como base e auxilio na prática dos conhecimentos obtidos ao decorrer da disciplina, nesse caso para criação de um slider interativo com a utilzação do framework Bootstrap, visto que, sua utilização melhorou poderia apresentar certa melhoria na interface das atividades.
 
    **Links das Imagens**
