@@ -15,7 +15,7 @@ Route::get('/administrador', 'PaginasController@admin');
 Route::get('/pacientes', 'PaginasController@cliente');
 
 Route::get('/', function () {
-    return view('/procedimentos');
+    return view('home');
 });
 
 Route::get('/about', function () {

@@ -62,7 +62,7 @@
        <tr>
 
           <td class="font-weight-bold" colspan="3">Valor dos exames: </td>
-          <td  class="font-weight-bold" colspan="2"> {{$procedimentos->sum("price")}}</td>
+          <td  class="font-weight-bold" colspan="2">{{$price}}</td> 
         </tr>
 
           <tr>

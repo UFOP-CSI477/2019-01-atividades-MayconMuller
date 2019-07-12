@@ -32,13 +32,18 @@ class TestController extends Controller
 
         //$price = Procedure::sum('price')->where('users_id', Auth::id())->get();
 
-        //$price = Procedure::where('users_id', Auth::id())->sum('price');
+        //$price = Procedure::where('users_id', Auth::user()->id)->sum('price');
 
         $procedimentos = Procedure::orderBy('name')->get();
 
         $price = Procedure::sum('price');
 
-        $poruser = $procedimentos->where('users_id', Auth::id());
+        //$price = $test->sum('price');
+
+
+
+
+        
 
 
 
@@ -49,8 +54,7 @@ class TestController extends Controller
                  ->with('testes', $test)
                  ->with('procedimentos', $procedimentos)
                  ->with('price', $price)
-                 ->with('count', $count)
-                 ->with('poruser',$poruser);
+                 ->with('count', $count);
                  
     }
     

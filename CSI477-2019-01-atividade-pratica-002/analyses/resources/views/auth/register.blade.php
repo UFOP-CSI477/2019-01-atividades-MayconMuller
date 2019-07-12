@@ -5,7 +5,17 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">{{ __('Register') }}
+
+
+
+                    <a href="#" class="navbar-brand"><img src="https://img.icons8.com/color/48/000000/treatment-plan.png" width="40" height="40" alt="" class="d-inline-block align-top"><span  style="font-size: 25px;">Analyses || Registro</a>
+
+
+
+
+
+                </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">

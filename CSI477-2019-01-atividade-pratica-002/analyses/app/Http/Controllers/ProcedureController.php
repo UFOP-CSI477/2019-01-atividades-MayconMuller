@@ -127,10 +127,32 @@ class ProcedureController extends Controller
     {
         //
 
-        $procedimento->delete();
+        //$test=Test::all();
+        $count = Test::where('procedures_id', $procedimento->id)->count();
+        //if ($procedimento->testes->sum('procedures_id')== 0) {
 
-        session()->flash('mensagem', 'Procedimento excluido com sucesso!');
+        if ($count == 0) {
 
-        return redirect()->route('procedimentos.index');
+          $procedimento->delete();
+          session()->flash('mensagem', 'Procedimento excluido com sucesso!');
+
+          return redirect()->route('procedimentos.index');
+        }else{
+            session()->flash('mensagemDanger', 'Este procedimento não pode ser excluido! pois possui exames marcados');
+          return redirect()->route('procedimentos.index');
+        }
+
+
+
+
+
+
+
+
+        //$procedimento->delete();
+
+        //session()->flash('mensagem', 'Procedimento excluido com sucesso!');
+
+        //return redirect()->route('procedimentos.index');
     }
 }

@@ -32,6 +32,12 @@
     </div>
     @endif
 
+    @if (Session::has('mensagemDanger'))
+    <div class="alert alert-danger" role="alert">
+         {{ Session::get('mensagemDanger') }}
+    </div>
+    @endif
+
 
 
     <div id="app">
