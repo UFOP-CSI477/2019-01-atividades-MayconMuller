@@ -15,9 +15,9 @@ class CidadeController extends Controller
      */
     public function index()
     {
-        //
+        //comentário simples para dar commit
 
-       
+
 
 
         // Model -> recuperação dos dados
@@ -37,7 +37,7 @@ class CidadeController extends Controller
     }
 
 
-  
+
 
 
 
@@ -54,7 +54,7 @@ class CidadeController extends Controller
 
       return view('cidades.create')
                 ->with('estados', $estados);
-          
+
     }
 
     /**
@@ -71,7 +71,7 @@ class CidadeController extends Controller
         Cidade::create($request->all());
         //$cidade->estado_id = $request->input('estado_id');
 
-        
+
         //$product->category_id = $request->input('category_id');
 
         //Mensagem de sucesso
@@ -143,7 +143,7 @@ class CidadeController extends Controller
      */
     public function destroy(Cidade $cidade)
     {
-            
+
           // Excluir o estado
 
         $cidade->delete();
