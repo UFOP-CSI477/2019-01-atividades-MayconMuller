@@ -52,10 +52,6 @@
                           <!--Área de acesso por todos usuários-->
 
                         <li class="nav-item">
-                                <a href="/home" class="nav-link">Home</a>
-                         </li>
-
-                        <li class="nav-item">
                             <a href="/procedimentos" class="nav-link">Area Geral</a>
                          </li>
 
@@ -81,13 +77,17 @@
                                         <a href="/administrador" class="nav-link">Área Administrativa</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{ route('users.show', Auth::user()->id)}}" class="nav-link"> Área do Paciente</a>
+                                        <a href="/pacientes" class="nav-link"> Área do Paciente</a>
                                     </li>
 
                                        @elseif(Auth::user()->type==3)
                                     <li class="nav-item">
-                                        <a href="{{ route('users.show', Auth::user()->id)}}" class="nav-link"> Área do Paciente</a>
-                                    </li>   
+                                        <a href="/pacientes" class="nav-link"> Área do Paciente</a>
+                                    </li>
+                                     
+                                     <li class="nav-item">
+                                        <a href="/administrador" class="nav-link">Área Administrativa</a>
+                                    </li>  
                                  @endif
                             @endauth
 

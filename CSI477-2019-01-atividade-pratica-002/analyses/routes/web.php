@@ -12,9 +12,10 @@
 */
 
 Route::get('/administrador', 'PaginasController@admin');
+Route::get('/pacientes', 'PaginasController@cliente');
 
 Route::get('/', function () {
-    return view('home');
+    return view('/procedimentos');
 });
 
 Route::get('/about', function () {
@@ -29,3 +30,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/procedimentos', 'ProcedureController');
 Route::resource('/users', 'UserController');
+Route::resource('/testes', 'TestController');
