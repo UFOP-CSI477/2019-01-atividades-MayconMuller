@@ -1,0 +1,42 @@
+body{
+  font-family: 'Aladin'  ;
+  background-color: #f3f3f3;
+  font-size: 16px;
+}
+
+#conteudo_do_sistema_primeiro{
+  margin: 90px auto 20px auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 15px;
+
+}
+
+#conteudo_do_sistema{
+  margin: 20px auto 20px auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 15px;
+
+}
+
+.bLaranja{
+  background-color: #FF4000;
+}
+.laranja{
+  color: #FF4000;
+}
+
+#margem{
+  background-color: #f3f3f3;
+  border-radius: 10px;
+
+}
+
+.black{
+	color: black;
+}
+
+.invisivel{
+	display: none;
+}
